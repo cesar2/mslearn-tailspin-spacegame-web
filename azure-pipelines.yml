@@ -1,10 +1,7 @@
 trigger:
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
 - main
 pool:
-  name: Default
+  vmImage: ubuntu-latest
 
 variables:
   buildConfiguration: 'Release'
